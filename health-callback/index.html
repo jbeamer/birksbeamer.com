@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HealthStack — Completing authorization…</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f1117;
+      color: #64748b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <p>Completing authorization, returning to HealthStack…</p>
+  <script>
+    // Forward the OAuth callback (code + state) to the local HealthStack server.
+    // Epic redirects here; this page bounces the browser to localhost.
+    window.location.replace('http://localhost:9003/callback' + window.location.search);
+  </script>
+</body>
+</html>

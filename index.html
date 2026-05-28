@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birks Beamer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: #f8fafc;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: #64748b;
+      font-size: 0.95rem;
+      margin-bottom: 3rem;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.85rem 1.25rem;
+      background: #1e2433;
+      border: 1px solid #2d3748;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #e2e8f0;
+      font-size: 0.9rem;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .link:hover {
+      background: #252d3d;
+      border-color: #4a90d9;
+    }
+
+    .link-label { font-weight: 500; }
+    .link-arrow { color: #4a5568; font-size: 0.8rem; }
+
+    footer {
+      margin-top: 4rem;
+      color: #2d3748;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Birks Beamer</h1>
+    <p class="subtitle">jbeamer@gmail.com</p>
+
+    <div class="links">
+      <a class="link" href="https://clients.birksbeamer.com">
+        <span class="link-label">Clients</span>
+        <span class="link-arrow">→</span>
+      </a>
+      <a class="link" href="https://bank.birksbeamer.com">
+        <span class="link-label">Bank</span>
+        <span class="link-arrow">→</span>
+      </a>
+      <a class="link" href="https://ha.birksbeamer.com">
+        <span class="link-label">Home</span>
+        <span class="link-arrow">→</span>
+      </a>
+    </div>
+  </div>
+
+  <footer>birksbeamer.com</footer>
+</body>
+</html>
